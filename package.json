@@ -1,0 +1,20 @@
+{
+  "name": "includeguardsnippets",
+  "displayName": "IncludeGuardSnippets",
+  "description": "Snippets for c/c++ include guards",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cxx",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
