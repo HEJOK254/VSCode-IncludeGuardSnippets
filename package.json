@@ -23,6 +23,7 @@
 	"bugs": {
 		"url": "https://github.com/HEJOK254/VSCode-IncludeGuardSnippets/issues"
 	},
+	"license": "MIT",
 	"keywords": [
 		"include",
 		"guard",
