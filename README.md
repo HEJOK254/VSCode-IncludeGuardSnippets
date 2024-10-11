@@ -1,65 +1,39 @@
-# includeguardsnippets README
+# Include Guard Snippets for C/C++
 
-This is the README for your extension "includeguardsnippets". After writing up a brief description, we recommend including the following sections.
+This extension provides handy snippets for adding include guards to your C/C++ header files. It includes two main snippets:
+
+- **Include Guard**: Automatically generates an include guard based on the filename.
+- **Interactive Include Guard**: Allows you to manually specify the guard name.
+
+These snippets help ensure that your header files are protected against multiple inclusions, improving code reliability and maintainability.
+
+_I'm not expecting any updates, because this extension is literally just two snippets, but if you have any ideas or find bugs, let me know on [GitHub](https://github.com/HEJOK254/VSCode-IncludeGuardSnippets/issues)!_
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Normal Snippet (#guard)
 
-For example if there is an image subfolder under your extension project workspace:
+Use a snippet to automatically choose a name and insert an appropriate guard
+![Normal Snippet Showcase](resources/gif/normal_snippet.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+### Interactive Snippet (#iguard)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+If you want to use a different name, use `#iguard` to insert a snippet that will let you choose a different name
+![Interactive Snippet Showcase](resources/gif/interactive_snippet.gif)
 
-## Requirements
+### Fill File with Snippet command (both #guard and #iguard)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+You can also use the built in vs code `Fill File with Snippet` command to use `#guard` or `#iguard` that way
+![Fill File with Snippet Showcase](resources/gif/normal_fill.gif)
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The snippets use regex to format the file name, which does not account for different naming conventions, which might result in names that you don't like. If this happens, you can use `#iguard` to manually choose a name, or if you think the name is being formatted weirdly, you can open an [issue](https://github.com/HEJOK254/VSCode-IncludeGuardSnippets/issues) on GitHub.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+For a more detailed changelog, visit: [CHANGELOG.md](CHANGELOG.md) (changelog tab)
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release.
