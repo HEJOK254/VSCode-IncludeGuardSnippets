@@ -34,6 +34,10 @@ The snippets use regex to format the file name, which does not account for diffe
 
 For a more detailed changelog, visit: [CHANGELOG.md](CHANGELOG.md) (changelog tab)
 
+### 1.0.1
+
+Fixed licensing
+
 ### 1.0.0
 
 Initial release.

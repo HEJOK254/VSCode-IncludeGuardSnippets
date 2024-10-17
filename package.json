@@ -9,7 +9,7 @@
 	"publisher": "HEJOK254",
 	"description": "Snippets for C/C++ include guards",
 	"icon": "resources/garbage_icon_i_made_in_gimp.png",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.94.0"
 	},
@@ -23,7 +23,7 @@
 	"bugs": {
 		"url": "https://github.com/HEJOK254/VSCode-IncludeGuardSnippets/issues"
 	},
-	"license": "MIT",
+	"license": "SEE LICENSE IN LICENSE",
 	"keywords": [
 		"include",
 		"guard",
